@@ -1,0 +1,369 @@
+openapi: 3.0.3
+info:
+  title: Laravel
+  description: ''
+  version: 1.0.0
+servers:
+  -
+    url: 'http://localhost'
+paths:
+  /api/healthcheck:
+    get:
+      summary: ''
+      operationId: getApiHealthcheck
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  status: up
+                  services:
+                    database: up
+                    redis: up
+                properties:
+                  status:
+                    type: string
+                    example: up
+                  services:
+                    type: object
+                    properties:
+                      database:
+                        type: string
+                        example: up
+                      redis:
+                        type: string
+                        example: up
+      tags:
+        - Endpoints
+      security: []
+  /api/users:
+    get:
+      summary: ''
+      operationId: getApiUsers
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  users:
+                    -
+                      id: 1
+                      name: 'Ms. Ardith Reichel I'
+                      email: waufderhar@example.org
+                      email_verified_at: '2023-03-13T13:21:53.000000Z'
+                      created_at: '2023-03-13T13:21:53.000000Z'
+                      updated_at: '2023-03-13T13:21:53.000000Z'
+                    -
+                      id: 2
+                      name: 'Luisa Simonis'
+                      email: scorkery@example.net
+                      email_verified_at: '2023-03-13T13:21:53.000000Z'
+                      created_at: '2023-03-13T13:21:53.000000Z'
+                      updated_at: '2023-03-13T13:21:53.000000Z'
+                    -
+                      id: 3
+                      name: 'Alva Hessel'
+                      email: dayna23@example.net
+                      email_verified_at: '2023-03-13T13:21:53.000000Z'
+                      created_at: '2023-03-13T13:21:53.000000Z'
+                      updated_at: '2023-03-13T13:21:53.000000Z'
+                    -
+                      id: 4
+                      name: 'Prof. Alessandro Kuhn'
+                      email: lisandro.hickle@example.com
+                      email_verified_at: '2023-03-13T13:21:53.000000Z'
+                      created_at: '2023-03-13T13:21:53.000000Z'
+                      updated_at: '2023-03-13T13:21:53.000000Z'
+                    -
+                      id: 5
+                      name: 'Horace Rodriguez'
+                      email: vesta.crona@example.com
+                      email_verified_at: '2023-03-13T13:21:53.000000Z'
+                      created_at: '2023-03-13T13:21:53.000000Z'
+                      updated_at: '2023-03-13T13:21:53.000000Z'
+                    -
+                      id: 6
+                      name: 'Dolores Kiehn'
+                      email: lyda.mann@example.com
+                      email_verified_at: '2023-03-13T13:21:53.000000Z'
+                      created_at: '2023-03-13T13:21:53.000000Z'
+                      updated_at: '2023-03-13T13:21:53.000000Z'
+                    -
+                      id: 7
+                      name: 'Lois Kutch'
+                      email: xzavier.howe@example.com
+                      email_verified_at: '2023-03-13T13:21:53.000000Z'
+                      created_at: '2023-03-13T13:21:53.000000Z'
+                      updated_at: '2023-03-13T13:21:53.000000Z'
+                    -
+                      id: 8
+                      name: 'Prof. Katrine Bradtke IV'
+                      email: blanda.cyril@example.org
+                      email_verified_at: '2023-03-13T13:21:53.000000Z'
+                      created_at: '2023-03-13T13:21:53.000000Z'
+                      updated_at: '2023-03-13T13:21:53.000000Z'
+                    -
+                      id: 9
+                      name: 'Jovanny Connelly III'
+                      email: kokuneva@example.net
+                      email_verified_at: '2023-03-13T13:21:53.000000Z'
+                      created_at: '2023-03-13T13:21:53.000000Z'
+                      updated_at: '2023-03-13T13:21:53.000000Z'
+                    -
+                      id: 10
+                      name: 'Kenyon Bauch'
+                      email: vonrueden.dominique@example.org
+                      email_verified_at: '2023-03-13T13:21:53.000000Z'
+                      created_at: '2023-03-13T13:21:53.000000Z'
+                      updated_at: '2023-03-13T13:21:53.000000Z'
+                    -
+                      id: 11
+                      name: Rp5QH
+                      email: elouise01@example.com
+                      email_verified_at: null
+                      created_at: '2023-03-13T14:18:56.000000Z'
+                      updated_at: '2023-03-13T14:18:56.000000Z'
+                    -
+                      id: 12
+                      name: Rp5QH
+                      email: elouise012@example.com
+                      email_verified_at: null
+                      created_at: '2023-03-13T14:20:08.000000Z'
+                      updated_at: '2023-03-13T14:20:08.000000Z'
+                properties:
+                  users:
+                    type: array
+                    example:
+                      -
+                        id: 1
+                        name: 'Ms. Ardith Reichel I'
+                        email: waufderhar@example.org
+                        email_verified_at: '2023-03-13T13:21:53.000000Z'
+                        created_at: '2023-03-13T13:21:53.000000Z'
+                        updated_at: '2023-03-13T13:21:53.000000Z'
+                      -
+                        id: 2
+                        name: 'Luisa Simonis'
+                        email: scorkery@example.net
+                        email_verified_at: '2023-03-13T13:21:53.000000Z'
+                        created_at: '2023-03-13T13:21:53.000000Z'
+                        updated_at: '2023-03-13T13:21:53.000000Z'
+                      -
+                        id: 3
+                        name: 'Alva Hessel'
+                        email: dayna23@example.net
+                        email_verified_at: '2023-03-13T13:21:53.000000Z'
+                        created_at: '2023-03-13T13:21:53.000000Z'
+                        updated_at: '2023-03-13T13:21:53.000000Z'
+                      -
+                        id: 4
+                        name: 'Prof. Alessandro Kuhn'
+                        email: lisandro.hickle@example.com
+                        email_verified_at: '2023-03-13T13:21:53.000000Z'
+                        created_at: '2023-03-13T13:21:53.000000Z'
+                        updated_at: '2023-03-13T13:21:53.000000Z'
+                      -
+                        id: 5
+                        name: 'Horace Rodriguez'
+                        email: vesta.crona@example.com
+                        email_verified_at: '2023-03-13T13:21:53.000000Z'
+                        created_at: '2023-03-13T13:21:53.000000Z'
+                        updated_at: '2023-03-13T13:21:53.000000Z'
+                      -
+                        id: 6
+                        name: 'Dolores Kiehn'
+                        email: lyda.mann@example.com
+                        email_verified_at: '2023-03-13T13:21:53.000000Z'
+                        created_at: '2023-03-13T13:21:53.000000Z'
+                        updated_at: '2023-03-13T13:21:53.000000Z'
+                      -
+                        id: 7
+                        name: 'Lois Kutch'
+                        email: xzavier.howe@example.com
+                        email_verified_at: '2023-03-13T13:21:53.000000Z'
+                        created_at: '2023-03-13T13:21:53.000000Z'
+                        updated_at: '2023-03-13T13:21:53.000000Z'
+                      -
+                        id: 8
+                        name: 'Prof. Katrine Bradtke IV'
+                        email: blanda.cyril@example.org
+                        email_verified_at: '2023-03-13T13:21:53.000000Z'
+                        created_at: '2023-03-13T13:21:53.000000Z'
+                        updated_at: '2023-03-13T13:21:53.000000Z'
+                      -
+                        id: 9
+                        name: 'Jovanny Connelly III'
+                        email: kokuneva@example.net
+                        email_verified_at: '2023-03-13T13:21:53.000000Z'
+                        created_at: '2023-03-13T13:21:53.000000Z'
+                        updated_at: '2023-03-13T13:21:53.000000Z'
+                      -
+                        id: 10
+                        name: 'Kenyon Bauch'
+                        email: vonrueden.dominique@example.org
+                        email_verified_at: '2023-03-13T13:21:53.000000Z'
+                        created_at: '2023-03-13T13:21:53.000000Z'
+                        updated_at: '2023-03-13T13:21:53.000000Z'
+                      -
+                        id: 11
+                        name: Rp5QH
+                        email: elouise01@example.com
+                        email_verified_at: null
+                        created_at: '2023-03-13T14:18:56.000000Z'
+                        updated_at: '2023-03-13T14:18:56.000000Z'
+                      -
+                        id: 12
+                        name: Rp5QH
+                        email: elouise012@example.com
+                        email_verified_at: null
+                        created_at: '2023-03-13T14:20:08.000000Z'
+                        updated_at: '2023-03-13T14:20:08.000000Z'
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: integer
+                          example: 1
+                        name:
+                          type: string
+                          example: 'Ms. Ardith Reichel I'
+                        email:
+                          type: string
+                          example: waufderhar@example.org
+                        email_verified_at:
+                          type: string
+                          example: '2023-03-13T13:21:53.000000Z'
+                        created_at:
+                          type: string
+                          example: '2023-03-13T13:21:53.000000Z'
+                        updated_at:
+                          type: string
+                          example: '2023-03-13T13:21:53.000000Z'
+      tags:
+        - Endpoints
+      security: []
+    post:
+      summary: ''
+      operationId: postApiUsers
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: 'Must match the regex /^[a-zA-Z0-9''\s]+$/.'
+                  example: oGAqJ
+                email:
+                  type: string
+                  description: 'This field must be a valid email address.'
+                  example: makenna.mante@example.net
+                password:
+                  type: string
+                  description: 'This field must be at least 6 characters.'
+                  example: ';VfCuAE?u|4:N7'
+              required:
+                - name
+                - email
+                - password
+      security: []
+  /api/pay:
+    post:
+      summary: ''
+      operationId: postApiPay
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                payment_type:
+                  type: string
+                  description: 'The payment_type.'
+                  example: Paypal
+              required:
+                - payment_type
+      security: []
+tags:
+  -
+    name: Endpoints
+    description: ''

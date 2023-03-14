@@ -1,0 +1,202 @@
+{
+    "variable": [
+        {
+            "id": "baseUrl",
+            "key": "baseUrl",
+            "type": "string",
+            "name": "string",
+            "value": "http:\/\/localhost"
+        }
+    ],
+    "info": {
+        "name": "Laravel",
+        "_postman_id": "0863dce5-62ca-4502-a6f6-2afdbd66792c",
+        "description": "",
+        "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
+    },
+    "item": [
+        {
+            "name": "Endpoints",
+            "description": "",
+            "item": [
+                {
+                    "name": "GET api\/healthcheck",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/healthcheck",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/healthcheck"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "59"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 200,
+                            "body": "{\"status\":\"up\",\"services\":{\"database\":\"up\",\"redis\":\"up\"}}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "GET api\/users",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/users",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/users"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "58"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 200,
+                            "body": "{\"users\":[{\"id\":1,\"name\":\"Ms. Ardith Reichel I\",\"email\":\"waufderhar@example.org\",\"email_verified_at\":\"2023-03-13T13:21:53.000000Z\",\"created_at\":\"2023-03-13T13:21:53.000000Z\",\"updated_at\":\"2023-03-13T13:21:53.000000Z\"},{\"id\":2,\"name\":\"Luisa Simonis\",\"email\":\"scorkery@example.net\",\"email_verified_at\":\"2023-03-13T13:21:53.000000Z\",\"created_at\":\"2023-03-13T13:21:53.000000Z\",\"updated_at\":\"2023-03-13T13:21:53.000000Z\"},{\"id\":3,\"name\":\"Alva Hessel\",\"email\":\"dayna23@example.net\",\"email_verified_at\":\"2023-03-13T13:21:53.000000Z\",\"created_at\":\"2023-03-13T13:21:53.000000Z\",\"updated_at\":\"2023-03-13T13:21:53.000000Z\"},{\"id\":4,\"name\":\"Prof. Alessandro Kuhn\",\"email\":\"lisandro.hickle@example.com\",\"email_verified_at\":\"2023-03-13T13:21:53.000000Z\",\"created_at\":\"2023-03-13T13:21:53.000000Z\",\"updated_at\":\"2023-03-13T13:21:53.000000Z\"},{\"id\":5,\"name\":\"Horace Rodriguez\",\"email\":\"vesta.crona@example.com\",\"email_verified_at\":\"2023-03-13T13:21:53.000000Z\",\"created_at\":\"2023-03-13T13:21:53.000000Z\",\"updated_at\":\"2023-03-13T13:21:53.000000Z\"},{\"id\":6,\"name\":\"Dolores Kiehn\",\"email\":\"lyda.mann@example.com\",\"email_verified_at\":\"2023-03-13T13:21:53.000000Z\",\"created_at\":\"2023-03-13T13:21:53.000000Z\",\"updated_at\":\"2023-03-13T13:21:53.000000Z\"},{\"id\":7,\"name\":\"Lois Kutch\",\"email\":\"xzavier.howe@example.com\",\"email_verified_at\":\"2023-03-13T13:21:53.000000Z\",\"created_at\":\"2023-03-13T13:21:53.000000Z\",\"updated_at\":\"2023-03-13T13:21:53.000000Z\"},{\"id\":8,\"name\":\"Prof. Katrine Bradtke IV\",\"email\":\"blanda.cyril@example.org\",\"email_verified_at\":\"2023-03-13T13:21:53.000000Z\",\"created_at\":\"2023-03-13T13:21:53.000000Z\",\"updated_at\":\"2023-03-13T13:21:53.000000Z\"},{\"id\":9,\"name\":\"Jovanny Connelly III\",\"email\":\"kokuneva@example.net\",\"email_verified_at\":\"2023-03-13T13:21:53.000000Z\",\"created_at\":\"2023-03-13T13:21:53.000000Z\",\"updated_at\":\"2023-03-13T13:21:53.000000Z\"},{\"id\":10,\"name\":\"Kenyon Bauch\",\"email\":\"vonrueden.dominique@example.org\",\"email_verified_at\":\"2023-03-13T13:21:53.000000Z\",\"created_at\":\"2023-03-13T13:21:53.000000Z\",\"updated_at\":\"2023-03-13T13:21:53.000000Z\"},{\"id\":11,\"name\":\"Rp5QH\",\"email\":\"elouise01@example.com\",\"email_verified_at\":null,\"created_at\":\"2023-03-13T14:18:56.000000Z\",\"updated_at\":\"2023-03-13T14:18:56.000000Z\"},{\"id\":12,\"name\":\"Rp5QH\",\"email\":\"elouise012@example.com\",\"email_verified_at\":null,\"created_at\":\"2023-03-13T14:20:08.000000Z\",\"updated_at\":\"2023-03-13T14:20:08.000000Z\"}]}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "POST api\/users",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/users",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/users"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"name\":\"oGAqJ\",\"email\":\"makenna.mante@example.net\",\"password\":\";VfCuAE?u|4:N7\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "POST api\/pay",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/pay",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/pay"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"payment_type\":\"Paypal\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                }
+            ]
+        }
+    ],
+    "auth": {
+        "type": "noauth"
+    }
+}
